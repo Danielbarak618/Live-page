@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/dqs1pgc.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <title>Blogin</title>
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="main-header-color">
+        <header class='main-header  flex space-between align-center'>
+            <div class="logo">Blogin<span class="footer-title-period">.</span></div>
+            <ul class="main-nav nav-header clean-list flex">
+                <li><a class="nav-link href=" #">Journal</a></li>
+                <li><a class="nav-link href=" #">About</a></li>
+                <li><a class="nav-link href=" #">Work</a></li>
+                <li><a class="nav-link href=" #">Contact</a></li>
+            </ul>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+        </header>
+    </div>
+
+
+
+
+    <main class="main-content main-layout cards-container">
+
+        <div class="card">
+            <div class="img-container">
+                <img src="img/1.jpeg" alt="" class="card-image">
+            </div>
+            <div class="card-p space-between">
+                <div class="card-content">
+                    <h2 class="card-title">Duis aute irure dolor in
+                        henderit in voluptate.</h2>
+                    <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex
+                        ea commo doconsequat, sunt In
+                        culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur...
+                    </p>
+                </div>
+                <button class="card-btn">Continue Reading<span class='arrow-img'> ⟶</span> </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="img/2.jpeg" alt="" class="card-image">
+            </div>
+            <div class="card-p">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex
+                    ea commo doconsequat, sunt In
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="card-btn">Continue Reading<span class='arrow-img'> ⟶</span> </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img-container">
+                <img src="img/3.jpeg" alt="" class="card-image">
+            </div>
+            <div class="card-p">
+                <h2 class="card-title">Duis aute irure dolor in
+                    henderit in voluptate.</h2>
+                <p class="card-text">Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex
+                    ea commo doconsequat, sunt In
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <p class="card-text">Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur...
+                </p>
+                <button class="card-btn" onclick="openModal()">Continue Reading<span class='arrow-img'> ⟶</span>
+                </button>
+            </div>
+        </div>
+    </main>
+    <section class="direction">
+        <div class="direction-container main-layout flex space-between">
+            <button class="direction-btn">← Previous</button>
+            <button class="direction-btn">Next 🠒</button>
+        </div>
+    </section>
+
+    <div class="text-modal">
+        <h2>“Join us to get access to the latest stories!</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum similique quis, mollitia atque
+            dignissimos maiores eaque. Porro inventore, eveniet delectus eaque soluta, officiis quasi expedita ipsa
+            in labore voluptas doloremque!</p>
+        <button class='close-btn' onclick="closeModal()"></button>
+    </div>
+    <footer class="main-footer main-layout space-between align-center flex flex-colum">
+
+        <h3 class="footer-title">Blogin<span class="footer-title-period">.</span></h3>
+        <small class="footer-txt">© 2014 Blogin.com - All Rights Reserved - Find more free Templates at
+            Pixelhint.com</small>
+        <ul class="social-nav  clean-list flex">
+            <li><a href="#" class="facebook"><i class="fab fa-facebook-square "></i><a></li>
+            <li><a href="#" class="twitter"><i class="fab fa-twitter-square "></i><a></li>
+            <li><a href="#" class="be"><a><i class="fab fa-behance-square "></i></li>
+            <li><a href="#" class="dribble"><a><i class="fab fa-dribbble-square "></i></li>
+        </ul>
+
+    </footer>
+    <script>
+        function toggleMenu() {
+            document.body.classList.toggle('menu-open');
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/be283e6348.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
